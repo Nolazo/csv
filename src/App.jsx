@@ -1,20 +1,16 @@
 import { useState, useEffect } from 'react'
-// import {data} from './assets/Libro1.csv'
 import Papa from 'papaparse'
 import './App.css'
 import {Bar} from 'react-chartjs-2'
 import { CategoryScale, LinearScale,
   BarElement, Title, Tooltip, Legend } from 'chart.js'
 
-// ChartJS.register(
-//   CategoryScale, LinearScale,
-//   BarElement, Title, Tooltip, Legend,)
+ChartJS.register(
+  CategoryScale, LinearScale,
+  BarElement, Title, Tooltip, Legend,)
 
 function App() {
-  // const [chartData, setChartData] = useState({
-  //   datasets: []
-  // })
-  // const [chartOptions, setChartOptions] = useState({})
+
 
   const handleSubmit = () => {
     papaParse(file_inc)
